@@ -1,8 +1,10 @@
 import {View, Text, StyleSheet} from 'react-native';
 import React, {useEffect} from 'react';
 
-const Spalesh = () => {
-  useEffect(() => {}, []);
+const Spalesh = ({navigation}) => {
+  useEffect(() => {
+    navigation.navigate("Login")
+  }, []);
   return <View style={styles.container}>
     <Text>
         Dice App
