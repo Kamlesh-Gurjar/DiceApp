@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, TextInput} from 'react-native';
-// import CustomTextInput from '../customComponets/CustomTextInput';
-// import CustomButton from '../customComponets/CustomButton';
-import firestore from '@react-native-firebase/firestore';
+ import firestore from '@react-native-firebase/firestore';
 // import Loader from '../customComponets/Loader';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import CustomTextInput from '../components/CustomTextInput';
+import CustomButton from '../components/CustomButton';
 const Login = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -66,7 +66,7 @@ const Login = ({navigation}) => {
         style={styles.signuptext}>
         SignUp
       </Text>
-      <Loader visisible={visible} />
+      {/* <Loader visisible={visible} /> */}
     </View>
   );
 };

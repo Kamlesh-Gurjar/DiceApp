@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Splaesh from '../Screens/Spalesh';
 import Spalesh from '../Screens/Spalesh';
-import Login from './Login';
+import Login from '../Screens/Login';
 const Stake = createNativeStackNavigator();
 const Appnavigatore = () => {
   return (
